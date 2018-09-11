@@ -13,3 +13,7 @@ print(cov, group = "function")
 # cov <- file_coverage(file1, file2)
 
 
+cov <- file_coverage("R/hello.R", "scripts/run_functions.R")
+
+cov <- package_coverage(type = "example")
+print(cov, group = "function")
